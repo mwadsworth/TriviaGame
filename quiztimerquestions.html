@@ -1,33 +1,28 @@
 <!DOCTYPE html>
+
 <html>
 <head>
-        <meta charset="UTF-8">
-        <title>Quiz</title>
-        <link rel="stylesheet" href="C:\Users\maril\OneDrive\Desktop\TriviaGame\assets\style.css">
+    <meta charset="utf-8" />
+    <title>True or False Quiz</title>
+
 </head>
 <body>
-    <div id="container">
-        <div id="start">Start Quiz!</div>
-        <div id="quiz" style="display: none">
-                <div id="question"></div>
-                <div id="qImg"></div>
-                <div id="choices">
-                        <div class="choice" id="A"
-                        onclick="checkAnswer('A')"></div>
-                        <div class="choice" id="B"
-                        onclick="checkAnswer('B')"></div>
-                        <div class="choice" id=""
-                        onclick="checkAnswer('B')"></div>
+    <img src="C:\Users\maril\OneDrive\Desktop\TriviaGame\assets\images\bobsburgers.jpg" alt="titleimage">
+    <div id="frame001">
+        <div id="font001">
+            <h2>True Or False Quiz</h2><text>Question: <text id="number001">0</text></text><br />
+            <text>Score: <text id="score001">0</text></text><br />
+            <text>Time: <text id="time001">100</text></text><br />
+            <hr />
+            <div id="disappear001">
+                <button class="buttons002" onclick="begin001()">Begin</button>
+            </div>
+            <p id="message001"></p>
+            <p id="message002"></p>
+            <p id="message003"></p>
+            <p id="message004"></p>
         </div>
-        <div id="timer">
-            <div id="counter"></div>
-            <div id="btimeGauge"></div>
-            <div id="timeGauge"></div>
-        </div>
-        <div id="progress"></div>
     </div>
-        <div id="score" style="display: none"></div>
-    </div>
-        <script src="quiztimerquestions.js"></script>  
+   <script type="text/javascript" src="C:\Users\maril\OneDrive\Desktop\TriviaGame\assets\javascript\quiztimerquestions.js"></script>
 </body>
 </html>
